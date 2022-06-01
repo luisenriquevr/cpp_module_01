@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 15:15:38 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/01 10:43:28 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/06/01 16:32:34 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Zombie::Zombie( std::string name ) {
 }
 
 Zombie::~Zombie( void ) {
-	std::cout << "Zombie " << this->_name << " has been destroyed" << std::endl;
+	std::cout << this->_name << " has been destroyed" << std::endl;
 }
 
 /* Setter functions */
