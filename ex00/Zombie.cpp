@@ -6,35 +6,39 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 15:15:38 by lvarela           #+#    #+#             */
-/*   Updated: 2022/05/20 15:23:27 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/06/01 10:43:28 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-// Constructor and destructor
+/* Constructor and destructor */
 
-Zombie::Zombie( void ) { return ; }
-Zombie::~Zombie( void ) {
-	std::cout << this->_name << " has been destroyed" << std::endl;
-	return ;
+Zombie::Zombie( void ) { }
+
+Zombie::Zombie( std::string name ) {
+	this->_name = name;
 }
 
-// Set variables functions
+Zombie::~Zombie( void ) {
+	std::cout << "Zombie " << this->_name << " has been destroyed" << std::endl;
+}
+
+/* Setter functions */
 
 void		Zombie::setName( std::string name ) {
 	this->_name = name;
 }
 
-// Get variables functions
+/* Getter functions */
 
-std::string	Zombie::getName( void ) {
+std::string	Zombie::getName( void ) const {
 	return (this->_name);
 }
 
-//	Other functions
+/*	Other functions */
 
 // <name> BraiiiiiiinnnzzzZ...
-void		Zombie::announce( void ){
+void		Zombie::_announce( void ) {
 	std::cout << this->_name << " BraiiiiiiinnnzzzZ..." << std::endl;
 }
