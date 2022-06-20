@@ -6,12 +6,10 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 17:09:51 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/20 17:20:39 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/06/20 17:41:11 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <string>
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
@@ -33,3 +31,7 @@ int main() {
 		jim.attack();
 	}
 }
+
+/* The reason to use a reference weapon in HumanA is that HumanA take his
+ * weapon by a constructor and only can use this weapons variable, but in HumanB
+ * case, you can change the name of the weapons variable. */
