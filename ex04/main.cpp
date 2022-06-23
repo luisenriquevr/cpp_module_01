@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 17:46:05 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/22 17:45:29 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/06/22 18:02:09 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,5 @@ int	main(int argc, char *argv[]) {
 	}
 	infile.close();
 	outfile.close();
-	return (0);
+	return 0;
 }
