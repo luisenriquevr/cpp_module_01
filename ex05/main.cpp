@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 18:01:31 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/23 17:39:35 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/06/23 18:02:34 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ int main(int argc, char *argv[]) {
 
 	if (argc != 2)
 		std::cout << "Options levels: INFO, WARNING, DEBUG, ERROR" << std::endl;
-	else {
+	else
 		karenita.complain(argv[1]);
-	}
 	return 0;
 }

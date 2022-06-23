@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 18:03:11 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/23 17:44:33 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/06/23 18:04:32 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void		Karen::error( void ) {
 	std::cout << "I want to speak to the manager now." << std::endl;
 }
 
-/* Complain is the function that calls the correct level */
+/* Complain is a function that calls the correct level */
 
 void		Karen::complain( std::string level ) {
 	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
