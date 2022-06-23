@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
+/*   Karen.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/20 17:24:00 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/23 11:44:42 by lvarela          ###   ########.fr       */
+/*   Created: 2022/06/22 18:03:07 by lvarela           #+#    #+#             */
+/*   Updated: 2022/06/22 18:09:29 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.hpp"
+#ifndef KAREN_HPP
+# define KAREN_HPP
+# include <iostream>
+# include <string>
 
-/* Constructor and destructor */
+class Karen {
+	private:
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
+	public:
+		Karen();
+		~Karen();
+		void	complain(std::string level);
+};
 
-HumanB::HumanB( std::string const name ) : _name(name) { }
-HumanB::~HumanB() { }
-
-/* Setter function */
-
-void		HumanB::setWeapon( Weapon &weapon ) {
-	_weapon = &weapon;
-}
-
-/* Attack function */
-
-void		HumanB::attack( void) {
-	std::cout << _name << " attacks with his " << _weapon->getType() << std::endl;
-}
+#endif
