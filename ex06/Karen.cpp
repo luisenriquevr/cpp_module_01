@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 17:50:50 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/23 18:05:06 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/06/25 16:40:17 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,8 @@ void		Karen::complain( std::string level ) {
 	switch (i) {
 		case 0: (this->*function[0]) ();
 		case 1: (this->*function[1]) ();
+		case 2: (this->*function[2]) ();
 		case 3: (this->*function[3]) (); break;
-		case 4: std::cout << "Probably insignificant problems" << std::endl;
+		default: std::cout << "Probably insignificant problems" << std::endl;
 	}
 }
