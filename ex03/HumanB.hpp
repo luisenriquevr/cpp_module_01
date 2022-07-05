@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 16:45:15 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/22 18:08:55 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/07/05 16:17:09 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ class HumanB {
 		std::string		_name;
 		Weapon			*_weapon;
 	public:
-		HumanB(std::string const);
-		~HumanB(void);
-		void			setWeapon(Weapon &);
-		void			attack(void);
+		HumanB( std::string const );
+		~HumanB( void );
+		void			setWeapon( Weapon & );
+		void			attack( void );
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 15:15:41 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/01 16:01:43 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/07/05 16:16:16 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ class	Zombie {
 	private:
 		std::string		_name;
 	public:
-		Zombie(void);
-		Zombie(std::string);
-		~Zombie(void);
-		void			setName(std::string);
-		std::string		getName(void) const;
-		void			_announce(void);
+		Zombie( void );
+		Zombie( std::string );
+		~Zombie( void );
+		void			setName( std::string );
+		std::string		getName( void ) const;
+		void			_announce( void );
 		
 };
 

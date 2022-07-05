@@ -6,7 +6,7 @@
 /*   By: lvarela <lvarela@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 16:28:02 by lvarela           #+#    #+#             */
-/*   Updated: 2022/06/22 18:08:35 by lvarela          ###   ########.fr       */
+/*   Updated: 2022/07/05 16:16:56 by lvarela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ class HumanA {
 		std::string		_name;
 		Weapon			&_weapon;
 	public:
-		HumanA(std::string const, Weapon &);
-		~HumanA(void);
-		void			attack(void);
+		HumanA( std::string const, Weapon & );
+		~HumanA( void );
+		void			attack( void );
 };
 
 #endif
